@@ -1,0 +1,73 @@
+{
+  "name": "heart_cloud_music",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.4.4",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "style-loader": "^1.1.3",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "rules": {
+      "space-before-function-paren": "warn",
+      "semi": "off",
+      "no-undef": "off",
+      "no-extra-parens": "warn",
+      "no-multi-spaces": "warn",
+      "no-extra-semi": "off",
+      "camelcase": [
+        2,
+        {
+          "properties": "never"
+        }
+      ],
+      "comma-style": [
+        2,
+        "last"
+      ],
+      "new-cap": [
+        2,
+        {
+          "newIsCap": true,
+          "capIsNew": false
+        }
+      ],
+      "max-len": 120
+    },
+    "parserOptions": {
+      "sourceType": "module",
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 Chrome versions"
+  ]
+}
