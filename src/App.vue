@@ -1,20 +1,23 @@
 <template>
   <div id="app">
-    hello world
+    <headm></headm>
   </div>
 </template>
 
 <script>
-  import "@css/variable.styl";
-  export default {
-    name: "app",
-    components: {}
-  };
+// eslint-disable-next-line quotes
+import Headm from "components/headm/headm";
+export default {
+  // eslint-disable-next-line quotes
+  name: "app",
+  components: {
+    Headm
+  }
+};
 </script>
 
-<style>
-  #app {
-    color: pink;
-  }
-</style>>
+<style scoped lang="stylus">
+#app {
+  color: pink;
+}
 </style>
