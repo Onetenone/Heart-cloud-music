@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
     "core-js": "^3.4.4",
+    "fastclick": "^1.0.6",
     "vue": "^2.6.10",
-    "vue-router": "^3.1.5"
+    "vue-router": "^3.1.5",
+    "vue-slim-better-scroll": "^1.7.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
@@ -36,30 +40,13 @@
       "@vue/standard"
     ],
     "rules": {
-      "space-before-function-paren": "warn",
-      "semi": "off",
-      "no-undef": "off",
-      "no-extra-parens": "warn",
-      "no-multi-spaces": "warn",
-      "no-extra-semi": "off",
-      "camelcase": [
-        2,
-        {
-          "properties": "never"
-        }
-      ],
-      "comma-style": [
-        2,
-        "last"
-      ],
       "new-cap": [
         2,
         {
           "newIsCap": true,
           "capIsNew": false
         }
-      ],
-      "max-len": 120
+      ]
     },
     "parserOptions": {
       "sourceType": "module",
@@ -68,6 +55,6 @@
   },
   "browserslist": [
     "> 1%",
-    "last 2 Chrome versions"
+    "last 2 versions"
   ]
 }

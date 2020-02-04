@@ -1,23 +1,23 @@
 <template>
   <div id="app">
     <headm></headm>
+    <tab></tab>
+    <keep-alive>
+    <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
 <script>
-// eslint-disable-next-line quotes
-import Headm from "components/headm/headm";
+import Headm from '../src/components/headm/headm'
+import Tab from '../src/components/tab/tab'
 export default {
-  // eslint-disable-next-line quotes
-  name: "app",
+  name: 'app',
   components: {
-    Headm
+    Headm,
+    Tab
   }
-};
+}
 </script>
 
-<style scoped lang="stylus">
-#app {
-  color: pink;
-}
-</style>
+<style scoped lang="stylus"></style>

@@ -10,8 +10,8 @@ export default {}
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
-@import "../assets/css/variable.styl";
-@import "../assets/css/mixin.styl"
+@import "../../assets/stylus/variable.styl";
+@import "../../assets/stylus/mixin.styl"
 .m-header
   position: relative
   height: 44px
@@ -25,7 +25,7 @@ export default {}
     width: 30px
     height: 32px
     margin-right: 9px
-    bg-image('../assets/images/logo.png')
+    bg-image('../../assets/images/logo.png')
     background-size: 30px 32px
   .text
     display: inline-block
